@@ -14,9 +14,6 @@ app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, '../frontend/dist')))
 
-app.get('/', (req, res)=>{
-    res.send("Hello")
-})
 
 // database connection
 connectDb()
